@@ -462,7 +462,7 @@
                         musicToggle.innerHTML = '<img src="ikon.png" alt="Music On">';
                     }).catch(() => {
                         isPlaying = false;
-                        musicToggle.innerHTML = '<img src="music-off.png" alt="Music Off">';
+                        musicToggle.innerHTML = '<img src="ikon.png" alt="Music Off">';
                         document.addEventListener('click', tryPlayMusic, { once: true });
                     });
                 }
@@ -480,7 +480,7 @@
             musicToggle.addEventListener('click', () => {
                 if (isPlaying) {
                     birthdayMusic.pause();
-                    musicToggle.innerHTML = '<img src="music-off.png" alt="Music Off">';
+                    musicToggle.innerHTML = '<img src="ikon.png" alt="Music Off">';
                 } else {
                     birthdayMusic.play();
                     musicToggle.innerHTML = '<img src="ikon.png" alt="Music On">';
